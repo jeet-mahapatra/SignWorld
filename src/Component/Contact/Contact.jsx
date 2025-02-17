@@ -18,7 +18,7 @@ const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   // Replace with your Google Sheet form submission URL
-  const FORM_URL = 'https://script.google.com/macros/s/AKfycbwJWH7oCKG_oZ8pJ-21TROFSYPEFw35CZqWlikxTD5SByxVoPT5XQxC8pmwUyvC_0s1/exec';
+  const FORM_URL = 'https://script.google.com/macros/s/AKfycbzPsu0MbHGIo46QQbmgJg-tF4dtYwJrXXGxOLFd9HM5vdBub5VVnZjcuzinFZR-66ry/exec';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
