@@ -8,6 +8,21 @@ import work6 from '../../assets/work6.jpg';
 import work7 from '../../assets/work7.jpg';
 import work8 from '../../assets/work8.jpg';
 import work9 from '../../assets/work9.jpg';
+import work10 from '../../assets/work10.jpg';
+import work11 from '../../assets/work11.jpg';
+import work12 from '../../assets/work12.jpg';
+import work13 from '../../assets/work13.jpg';
+import work14 from '../../assets/work14.jpg';
+import work15 from '../../assets/work15.jpg';
+import work16 from '../../assets/work16.jpg';
+import work17 from '../../assets/work17.jpg';
+import work18 from '../../assets/work18.jpg';
+import work19 from '../../assets/work19.jpg';
+import work20 from '../../assets/work20.jpg';
+import work21 from '../../assets/work21.jpg';
+import work22 from '../../assets/work22.jpg';
+import work23 from '../../assets/work23.jpg';
+import work24 from '../../assets/work24.jpg';
 
 const Work = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -22,6 +37,21 @@ const Work = () => {
     { id: 7, img: work7 },
     { id: 8, img: work8 },
     { id: 9, img: work9 },
+    { id: 10, img: work10 },
+    { id: 11, img: work11 },
+    { id: 12, img: work12 },
+    { id: 13, img: work13 },
+    { id: 14, img: work14 },
+    { id: 15, img: work15 },
+    { id: 16, img: work16 },
+    { id: 17, img: work17 },
+    { id: 18, img: work18 },
+    { id: 19, img: work19 },
+    { id: 20, img: work20 },
+    { id: 21, img: work21 },
+    { id: 22, img: work22 },
+    { id: 23, img: work23 },
+    { id: 24, img: work24 },
   ];
 
   const openPreview = (image) => {
