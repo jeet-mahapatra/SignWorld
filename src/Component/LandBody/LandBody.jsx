@@ -1,8 +1,34 @@
-import React, { useState } from "react";
-import backgroundImage from "../../assets/landImage.jpeg"; // Add your background image
+import React, { useState, useEffect } from "react";
+
+import backgroundImage2 from "../../assets/static1.jpg";
+import backgroundImage3 from "../../assets/static2.jpg";
+import backgroundImage4 from "../../assets/static3.jpg";
+import backgroundImage5 from "../../assets/static4.jpg";
+import backgroundImage6 from "../../assets/static5.jpg";
+import backgroundImage1 from "../../assets/static6.jpg";
 
 const LandBody = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const backgroundImages = [
+    backgroundImage1,
+    backgroundImage2,
+    backgroundImage3,
+    backgroundImage4,
+    backgroundImage5,
+    backgroundImage6,
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -20,15 +46,27 @@ const LandBody = () => {
     <>
       <div
         id="about"
-        className="relative min-h-screen border-none bg-cover bg-center bg-no-repeat w-full pb-3"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className="relative min-h-screen border-none w-full pb-3 overflow-hidden"
       >
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        {/* Background Images */}
+        {backgroundImages.map((img, index) => (
+          <div
+            key={index}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
+            style={{
+              backgroundImage: `url(${img})`,
+              opacity: currentImageIndex === index ? 1 : 0,
+              zIndex: currentImageIndex === index ? 1 : 0,
+            }}
+          />
+        ))}
 
-        {/* Content Container */}
-        <div className="relative z-10 container mx-auto px-0">
-          <div className="max-w-3xl text-white px-4 pt-20">
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-[2]"></div>
+
+        {/* Content Container - Updated positioning */}
+        <div className="relative z-[3] container mx-auto px-0 h-screen flex items-end">
+          <div className="max-w-3xl text-white px-4 pb-20">
             <h1 className="text-5xl font-bold mb-6">
               SignWorld – Elevate Your Brand with Custom Signage Solutions
             </h1>

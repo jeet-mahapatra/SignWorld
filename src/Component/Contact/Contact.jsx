@@ -18,7 +18,7 @@ const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
 
   // Replace with your Google Sheet form submission URL
-  const FORM_URL = 'https://script.google.com/macros/s/AKfycbzPsu0MbHGIo46QQbmgJg-tF4dtYwJrXXGxOLFd9HM5vdBub5VVnZjcuzinFZR-66ry/exec';
+  const FORM_URL = "https://script.google.com/macros/s/AKfycbwYcvGToLvoNHrN6_-aThqTAbgqckr7lc7rx4MoiiF9glSuN7CYvK2TtdPKuhXfYZVA/exec";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-20 bg-gradient-to-b from-cyan-100 via-teal-300 to-emerald-300">
+    <div id="contact" className="py-20 bg-gradient-to-b from-[tomato] via-[#ff8c00] to-[orange]">
       <div className="max-w-4xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-16">
