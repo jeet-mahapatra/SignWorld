@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
-
-import backgroundImage2 from "../../assets/static1.jpg";
-import backgroundImage3 from "../../assets/static2.jpg";
-import backgroundImage4 from "../../assets/static3.jpg";
-import backgroundImage5 from "../../assets/static4.jpg";
-import backgroundImage6 from "../../assets/static5.jpg";
-import backgroundImage1 from "../../assets/static6.jpg";
+import backgroundImage1 from "../../assets/static1.jpg";
+import backgroundImage2 from "../../assets/static2.jpg";
+import backgroundImage3 from "../../assets/static3.jpg";
+import backgroundImage4 from "../../assets/static4.jpg";
+import backgroundImage5 from "../../assets/static5.jpg";
 
 const LandBody = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const backgroundImages = [
@@ -17,7 +14,6 @@ const LandBody = () => {
     backgroundImage3,
     backgroundImage4,
     backgroundImage5,
-    backgroundImage6,
   ];
 
   useEffect(() => {
@@ -25,81 +21,48 @@ const LandBody = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Change image every 5 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsMenuOpen(false);
-  };
-
   return (
     <>
-      <div
-        id="about"
-        className="relative min-h-screen border-none w-full pb-3 overflow-hidden"
-      >
-        {/* Background Images */}
-        {backgroundImages.map((img, index) => (
-          <div
-            key={index}
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
-            style={{
-              backgroundImage: `url(${img})`,
-              opacity: currentImageIndex === index ? 1 : 0,
-              zIndex: currentImageIndex === index ? 1 : 0,
-            }}
-          />
-        ))}
-
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-[2]"></div>
-
-        {/* Content Container - Updated positioning */}
-        <div className="relative z-[3] container mx-auto px-0 h-screen flex items-end">
-          <div className="max-w-3xl text-white px-4 pb-20">
-            <h1 className="text-5xl font-bold mb-6">
-              SignWorld !
-            </h1>
-
-            <p className="text-l mb-8">
-              SignWorld specializes in high-quality, custom signage solutions
-              designed to elevate your brand. From storefront signs to LED
-              displays, we create visually striking designs tailored to your
-              business needs.
-              <br />
-              Our expert team ensures precision, durability, and
-              creativity in every project, using advanced materials and modern
-              technology.
-              <br />
-               We cater to various
-              industries, including retail, hospitality, and corporate sectors,
-              delivering impactful branding solutions. At SignWorld, we believe
-              your brand deserves to stand out
+      {/* Hero Section */}
+      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+          <div className="text-center md:text-left md:w-1/2">
+            <h1 className="text-6xl text-yellow-400 font-extrabold mb-4">SignWorld</h1>
+            <p className="text-2xl font-light mb-8">
+              Elevate Your Brand with Custom Signage Solutions
             </p>
-            {/* Decorative Line */}
-            <div className="w-1/2 h-1 bg-blue-600 mb-8"></div>
+            
+            <a
+              href="#contact"
+              className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:bg-orange-300 transition duration-300"
+            >
+              Contact Us
+            </a>
+          </div>
 
-            {/* Call to Action Buttons */}
-            <div className="flex gap-6">
-              <a
-                onClick={() => scrollToSection("contact")}
-                className="px-8 py-3 bg-transparent border-2 border-white 
-              hover:bg-white hover:text-black rounded-3xl transition 
-              duration-300 text-white font-semibold relative group cursor-pointer"
-              >
-                <span className="absolute inset-0 bg-blue-600 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-200"></span>
-                <span className="relative">Contact Us</span>
-              </a>
+          {/* Image Carousel Section */}
+          <div className="md:w-1/2 w-full h-96 flex items-center justify-center mt-8 md:mt-0">
+            <div className="relative w-full h-full">
+              {backgroundImages.map((img, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-1000 ${
+                    currentImageIndex === index ? "opacity-100" : "opacity-0"
+                  }`}
+                  style={{
+                    backgroundImage: `url(${img})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    borderRadius: "1rem",
+                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                  }}
+                />
+              ))}
             </div>
           </div>
         </div>
