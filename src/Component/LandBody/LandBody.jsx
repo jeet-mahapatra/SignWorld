@@ -29,7 +29,7 @@ const LandBody = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl overflow-hidden mx-4 my-8 shadow-2xl">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
           <div className="text-center md:text-left md:w-1/2">
             <h1 className="text-6xl text-yellow-400 font-extrabold mb-4">SignWorld</h1>

@@ -66,7 +66,7 @@ const Work = () => {
 
   return (
     <>
-      <div id='work' className="py-20 px-4 bg-gradient-to-b from-[tomato] via-[#ff8c00] to-[orange]">
+      <div id='work' className="py-20 px-4 bg-gradient-to-b from-[tomato] via-[#ff8c00] to-[orange] rounded-xl overflow-hidden mx-4 my-8 shadow-2xl">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-800 mb-4">Our Services</h2>

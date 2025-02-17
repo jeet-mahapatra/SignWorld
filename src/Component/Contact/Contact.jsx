@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-20 bg-gradient-to-b from-[tomato] via-[#ff8c00] to-[orange]">
+    <div id="contact" className="py-20 bg-gradient-to-b from-[tomato] via-[#ff8c00] to-[orange] rounded-xl overflow-hidden mx-4 my-8 shadow-2xl">
       <div className="max-w-4xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-16">

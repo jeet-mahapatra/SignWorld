@@ -69,7 +69,7 @@ const Client = () => {
   };
 
   return (
-    <div id='client' className="bg-white py-16">
+    <div id='client' className="bg-white py-16 rounded-xl overflow-hidden mx-4 my-8 shadow-2xl">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8">Our Clients</h2>
         <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
@@ -93,7 +93,7 @@ const Client = () => {
           >
             <div
               ref={slideRef}
-              className="flex gap-8 transition-transform duration-500"
+              className="flex gap-4 md:gap-8 transition-transform duration-500"
               style={{
                 transform: `translateX(-${currentIndex * (100 / visibleSlides)}%)`,
                 width: `${(totalSlides * 100) / visibleSlides}%`
@@ -102,12 +102,12 @@ const Client = () => {
               {clients.map((client) => (
                 <div
                   key={client.id}
-                  className="flex-shrink-0 w-[calc(100%/5-1.75rem)] aspect-[3/2] group" // Changed from 6 to 5
+                  className="flex-shrink-0 w-[calc(100%/2-0.5rem)] md:w-[calc(100%/5-1.75rem)] aspect-[3/2] group"
                 >
                   <img
                     src={client.img}
                     alt=""
-                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 p-2 md:p-4"
                   />
                 </div>
               ))}

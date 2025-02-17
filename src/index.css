@@ -28,3 +28,10 @@ html {
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out;
 }
+
+.scrollable-container {
+  overflow: hidden; /* Hides both vertical and horizontal scrollbars */
+  /* OR */
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+  overflow-y: hidden; /* Hides vertical scrollbar */
+}

@@ -9,14 +9,14 @@ import Work from './Component/Work/Work'
 function App() {
 
   return (
-    <>
+    <div className="scrollable-container">
     <Navbar/>
     <LandBody/>
     <Work/>
     <Client/>
     <Contact/>
     <Footer/>
-    </>
+    </div>
   )
 }
 

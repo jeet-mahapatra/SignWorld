@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import logo from "../../assets/logo.jpg"
+import logo from "../../assets/logo.jpg"; // Ensure this path is correct
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
- 
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -17,18 +17,13 @@ const Navbar = () => {
   };
 
   return (
-    
-    <nav className="bg-white w-full border-b z-50 m-2 p-2 shadow-md">
+    <nav className="bg-white p-4 z-50  rounded-xl overflow-hidden mx-4 my-2 shadow-2xl">
       <div id='home' className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+          {/* Updated Logo Size */}
           <div className="flex-shrink-0">
             <a onClick={() => scrollToSection('home')} className="cursor-pointer">
-              <img
-                className="h-12 w-auto"
-                src={logo}
-                alt="SignWorld Logo"
-              />
+              <img src={logo} alt="SignWorld Logo" className="h-12 md:h-16" /> {/* Adjusted height for larger logo */}
             </a>
           </div>
 
@@ -82,10 +77,10 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden ">
+          <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-600  cursor-pointer hover:text-gray-900 focus:outline-none"
+              className="text-gray-600 cursor-pointer hover:text-gray-900 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -108,7 +103,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden  cursor-pointer">
+          <div className="md:hidden cursor-pointer">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
                 onClick={() => scrollToSection('home')}
