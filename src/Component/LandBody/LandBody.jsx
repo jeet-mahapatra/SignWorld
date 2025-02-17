@@ -68,7 +68,7 @@ const LandBody = () => {
         <div className="relative z-[3] container mx-auto px-0 h-screen flex items-end">
           <div className="max-w-3xl text-white px-4 pb-20">
             <h1 className="text-5xl font-bold mb-6">
-              SignWorld – Elevate Your Brand with Custom Signage Solutions
+              SignWorld !
             </h1>
 
             <p className="text-l mb-8">
