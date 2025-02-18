@@ -16,13 +16,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1 - Contact Information */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold mb-4">SignWorld</h3>
+            <h3 className="text-2xl font-bold mb-4">Signworld</h3>
             <div className="flex items-start space-x-3">
               <FaMapMarkerAlt className="text-xl mt-1" />
               <div>
                 <p className="font-medium">Our Address</p>
                 <p className="text-gray-200 font-medium">
-                  SIGN WORLD
+                Signworld
                   <br />
                  <p  className="font-medium">Reg. Office:</p>  Ichharia, Sonamukhi, Bankura,
                   WB - 722157 

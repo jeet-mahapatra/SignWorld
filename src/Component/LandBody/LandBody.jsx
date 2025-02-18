@@ -33,16 +33,16 @@ const LandBody = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
           <div className="text-center md:text-left md:w-1/2">
             <h1 className="text-6xl text-white font-extrabold mb-4">
-              SignWorld
+              Signworld
             </h1>
             <div className="  text-2xl font-light mb-8">
-              <p className="hidden md:block"> SignWorld delivers
+              <p className="hidden md:block"> We delivers
               high-quality, customized signage solutions for businesses. From
               LED displays to storefront signs, we ensure durability and
               creativity. Our display boards are designed to enhance brand
               visibility with innovative designs and premium materials.</p>
               <br />
-              <b>SignWorld – Where Creativity Meets Excellence.</b>
+              <b>Signworld – Where Creativity Meets Excellence.</b>
             </div>
 
             <a
