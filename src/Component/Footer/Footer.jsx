@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1 - Contact Information */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
+            <h3 className="text-2xl font-bold mb-4">SignWorld</h3>
             <div className="flex items-start space-x-3">
               <FaMapMarkerAlt className="text-xl mt-1" />
               <div>

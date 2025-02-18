@@ -29,24 +29,32 @@ const LandBody = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl overflow-hidden mx-4 my-8 shadow-2xl">
+      <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-[tomato] via-[#ff8c00] to-[orange] text-white rounded-xl overflow-hidden mx-4 my-8 shadow-2xl">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
           <div className="text-center md:text-left md:w-1/2">
-            <h1 className="text-6xl text-yellow-400 font-extrabold mb-4">SignWorld</h1>
-            <p className="text-2xl font-light mb-8">
-              Elevate Your Brand with Custom Signage Solutions
-            </p>
-            
+            <h1 className="text-6xl text-green-800 font-extrabold mb-4">
+              SignWorld
+            </h1>
+            <div className="  text-2xl font-light mb-8">
+              <p className="hidden md:block"> SignWorld delivers
+              high-quality, customized signage solutions for businesses. From
+              LED displays to storefront signs, we ensure durability and
+              creativity. Our display boards are designed to enhance brand
+              visibility with innovative designs and premium materials.</p>
+              <br />
+              <b>SignWorld – Where Creativity Meets Excellence.</b>
+            </div>
+
             <a
               href="#contact"
-              className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:bg-orange-300 transition duration-300"
+              className="px-8 py-3 bg-blue-500 text-white-600 font-semibold rounded-full shadow-lg hover:bg-green-700 transition duration-300"
             >
               Contact Us
             </a>
           </div>
 
           {/* Image Carousel Section */}
-          <div className="md:w-1/2 w-full h-96 flex items-center justify-center mt-8 md:mt-0">
+          <div className="md:w-1/2 w-full h-96 flex items-center justify-center mt-8 mb-2 md:mt-0">
             <div className="relative w-full h-full">
               {backgroundImages.map((img, index) => (
                 <div
