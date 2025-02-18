@@ -32,7 +32,7 @@ const LandBody = () => {
       <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-[tomato] via-[#ff8c00] to-[orange] text-white rounded-xl overflow-hidden mx-4 my-8 shadow-2xl">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
           <div className="text-center md:text-left md:w-1/2">
-            <h1 className="text-6xl text-green-800 font-extrabold mb-4">
+            <h1 className="text-6xl text-white font-extrabold mb-4">
               SignWorld
             </h1>
             <div className="  text-2xl font-light mb-8">
