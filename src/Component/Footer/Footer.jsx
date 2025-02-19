@@ -128,10 +128,7 @@ const Footer = () => {
               <p className="mt-4">Sunday</p>
               <p className="text-gray-200">Closed</p>
             </div>
-            <div className="pt-4">
-              <p className="font-medium">GST No:</p>
-              <p className="text-gray-200">19BZBPM8827Q1ZF</p>
-            </div>
+          
           </div>
         </div>
 
