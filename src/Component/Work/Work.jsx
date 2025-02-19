@@ -23,6 +23,9 @@ import work21 from '../../assets/work21.jpg';
 import work22 from '../../assets/work22.jpg';
 import work23 from '../../assets/work23.jpg';
 import work24 from '../../assets/work24.jpg';
+import work25 from '../../assets/work25.jpg';
+import work26 from '../../assets/work26.jpg';
+import work27 from '../../assets/work27.jpg';
 
 const Work = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -52,6 +55,9 @@ const Work = () => {
     { id: 22, img: work22 },
     { id: 23, img: work23 },
     { id: 24, img: work24 },
+    { id: 25, img: work25 },
+    { id: 26, img: work26 },
+    { id: 27, img: work27 },
   ];
 
   const openPreview = (image) => {
