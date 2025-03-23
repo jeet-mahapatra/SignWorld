@@ -29,12 +29,10 @@ const Footer = () => {
 
                   <br />
                   <b  className="font-medium">B.O.:</b>
-                  <p> 1525, R.N. Tagore Road, Bedia Para,
-                  Dumdum, Kolkata, West Bengal - 700077</p>
+                  <p> 42, Vidyasagar Road, Bedia Para, Dumdum, Kolkata-700077, West Bengal.</p>
                  
                   <br />
-                  <b  className="font-medium">Trade License No.:</b>
-                  <p>BK02621N2020000004</p>
+                 
                   
                 </p>
               </div>
@@ -52,7 +50,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <FaEnvelope className="text-xl" />
               <a className="hover:text-blue-200 transition duration-300">
-                signworldkolkata@gmail.com
+              signworldccu@gmail.com
               </a>
             </div>
             <div className="flex items-center space-x-3">
