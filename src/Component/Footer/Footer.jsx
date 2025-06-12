@@ -24,8 +24,8 @@ const Footer = () => {
                 <p className="text-gray-200 font-medium">
                 Signworld
                   <br />
-                 <p  className="font-medium">Reg. Office:</p>  Ichharia, Sonamukhi, Bankura,
-                  WB - 722157 
+                 <p  className="font-medium">Reg. Office:</p>Ground Floor, Near U.P. School, Sutahat, Buxi Bazar, Cuttack, Odisha-753001
+ 
 
                   <br />
                   <b  className="font-medium">B.O.:</b>
