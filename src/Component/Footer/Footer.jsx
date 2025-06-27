@@ -31,34 +31,20 @@ const Footer = () => {
                   <b  className="font-medium">B.O.:</b>
                   <p> 42, Vidyasagar Road, Bedia Para, Dumdum, Kolkata-700077, West Bengal.</p>
                  
-                  <br />
+                
+
+                  <b  className="font-medium">B.O.:</b>
+               <p> Shyam Vihar, Phase 2, Near Govt. Boy high School, New Delhi-110043</p>
+                <b  className="font-medium">Factory :</b>
+                  
+                   <p>A21/22, Narayana Industrial area, Phase 2, New Delhi -110028</p>
                  
                   
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center space-x-3">
-              <FaPhone className="text-xl" />
-              <a
-                className="hover:text-blue-200 transition duration-300"
-              >
-                +91 9711607173
-              </a>
-            </div>
-
-            <div className="flex items-center space-x-3">
-              <FaEnvelope className="text-xl" />
-              <a className="hover:text-blue-200 transition duration-300">
-              signworldccu@gmail.com
-              </a>
-            </div>
-            <div className="flex items-center space-x-3">
-              <FaEnvelope className="text-xl" />
-              <a className="hover:text-blue-200 transition duration-300">
-                signworldkolkata@outlook.com
-              </a>
-            </div>
+           
 
           
 
@@ -125,6 +111,28 @@ const Footer = () => {
               <p className="text-gray-200">10:00 AM - 4:00 PM</p>
               <p className="mt-4">Sunday</p>
               <p className="text-gray-200">Closed</p>
+            </div>
+
+             <div className="flex items-center space-x-3">
+              <FaPhone className="text-xl" />
+              <a
+                className="hover:text-blue-200 transition duration-300"
+              >
+                +91 9711607173
+              </a>
+            </div>
+
+            <div className="flex items-center space-x-3">
+              <FaEnvelope className="text-xl" />
+              <a className="hover:text-blue-200 transition duration-300">
+              signworldccu@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center space-x-3">
+              <FaEnvelope className="text-xl" />
+              <a className="hover:text-blue-200 transition duration-300">
+                signworldkolkata@outlook.com
+              </a>
             </div>
           
           </div>
